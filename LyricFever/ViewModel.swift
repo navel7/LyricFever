@@ -24,7 +24,7 @@ import MediaRemoteAdapter
     static let shared = ViewModel()
     
     // Apple Music Tahoe broken AppleScript workaround
-    let musicController = MediaController(bundleIdentifier: "com.apple.Music")
+    let musicController = MediaController()
 //    var appleMusicUniqueIdentifier: String?
 
     var currentlyPlaying: String?
@@ -46,6 +46,10 @@ import MediaRemoteAdapter
         formatter.zeroFormattingBehavior = [.pad]
         return formatter.string(from: TimeInterval(totalSeconds)) ?? "0:00"
     }
+    private func shouldHandlePlaybackUpdate(from player: PlayerType) -> Bool {
+        currentPlayer == player
+    }
+
     private func initAppleMusicWorkaround() {
         musicController.onTrackInfoReceived = { data in
             print("Track info received")
@@ -56,22 +60,20 @@ import MediaRemoteAdapter
 //                } else {
 //                    self.appleMusicUniqueIdentifier = data.payload.uniqueIdentifier
 //                }
-                guard self.currentPlayer == .appleMusic else {
+                guard self.shouldHandlePlaybackUpdate(from: .appleMusic),
+                      let data,
+                      data.payload.bundleIdentifier == "com.apple.Music" else {
                     return
                 }
-                guard let artwork = data?.payload.artwork else {
+                guard let artwork = data.payload.artwork else {
                     if self.currentlyPlaying == nil {
                         self.artworkImage = nil
                     }
                     print("Apple Music Artwork Workaround: Ignoring No Artwork")
                     return
                 }
-                guard data?.payload.applicationName == "Music" else {
-                    return
-                }
                 self.artworkImage = artwork
             }
-            // This will only be called for Apple Music events
         }
         musicController.startListening()
     }
@@ -604,7 +606,7 @@ import MediaRemoteAdapter
     }
     
     func appleMusicPlaybackDidChange(_ notification: Notification) {
-        guard currentPlayer == .appleMusic else {
+        guard shouldHandlePlaybackUpdate(from: .appleMusic) else {
             return
         }
         if notification.userInfo?["Player State"] as? String == "Playing" {
@@ -639,7 +641,7 @@ import MediaRemoteAdapter
     }
     
     func spotifyPlaybackDidChange(_ notification: Notification) {
-        guard currentPlayer == .spotify else {
+        guard shouldHandlePlaybackUpdate(from: .spotify) else {
             return
         }
         if notification.userInfo?["Player State"] as? String == "Stopped" {
