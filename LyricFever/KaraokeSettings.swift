@@ -7,7 +7,6 @@
 
 import SwiftUI
 import AppKit
-import CompactSlider
 import FontPicker
 
 struct KaraokeSettingsView: View {
@@ -51,11 +50,15 @@ struct KaraokeSettingsView: View {
             if !karaokeUseAlbumColor {
                 ColorPicker("Set a background color", selection: colorBinding, supportsOpacity: false)
             }
-            Text("Opacity Level: \(Int(karaokeTransparency))%")
-            CompactSlider(value: $karaokeTransparency, in: 1...100, step: 5) {
-                Text("Opacity Level:")
-                Spacer()
-                Text("\(Int(karaokeTransparency))%")
+            Text("Opacity Level")
+            HStack {
+                Image(systemName: "circle")
+                    .accessibilityHidden(true)
+                Slider(value: $karaokeTransparency, in: 1...100, step: 5)
+                    .accessibilityLabel("Opacity Level")
+                    .accessibilityValue("\(Int(karaokeTransparency)) percent")
+                Image(systemName: "circle.fill")
+                    .accessibilityHidden(true)
             }
             .frame(width: 300, height: 24)
             .padding(.bottom, 20)
