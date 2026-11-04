@@ -27,6 +27,45 @@ struct VisualEffectView: NSViewRepresentable {
     }
 }
 
+private struct LyricFadeIn: ViewModifier {
+    @State private var revealTrigger = false
+
+    func body(content: Content) -> some View {
+        content
+            .keyframeAnimator(initialValue: CGFloat(0), trigger: revealTrigger) { lyric, progress in
+                lyric.mask {
+                    GeometryReader { geometry in
+                        let fadeWidth = geometry.size.width
+                        let edge = progress * (geometry.size.width + fadeWidth)
+
+                        ZStack(alignment: .leading) {
+                            Rectangle()
+                                .fill(.white)
+                                .frame(width: max(0, edge - fadeWidth))
+                            LinearGradient(colors: [.white, .clear], startPoint: .leading, endPoint: .trailing)
+                                .frame(width: fadeWidth)
+                                .offset(x: edge - fadeWidth)
+                        }
+                        .environment(\.layoutDirection, .leftToRight)
+                        // Keyframes already interpolate the mask; don't animate each intermediate layout again.
+                        .transaction { transaction in
+                            transaction.animation = nil
+                            transaction.disablesAnimations = true
+                        }
+                    }
+                }
+            } keyframes: { _ in
+                MoveKeyframe(CGFloat(0))
+                LinearKeyframe(CGFloat(1), duration: 0.8)
+            }
+            .task {
+                await Task.yield()
+                guard !Task.isCancelled else { return }
+                revealTrigger.toggle()
+            }
+    }
+}
+
 struct KaraokeView: View {
     @Environment(ViewModel.self) var viewmodel
     @AppStorage("karaokeTransparency") var karaokeTransparency: Double = 50
@@ -61,7 +100,7 @@ struct KaraokeView: View {
     
     @ViewBuilder
     func lyricsView() -> some View {
-        if let currentlyPlayingLyricsIndex = viewmodel.currentlyPlayingLyricsIndex {
+        if let currentlyPlayingLyricsIndex = viewmodel.currentlyPlayingKaraokeLyricsIndex {
             if viewmodel.translationExists {
                 if karaokeShowMultilingual, originalAndTranslationAreDifferent(for: currentlyPlayingLyricsIndex) {
                     multilingualView(currentlyPlayingLyricsIndex)
@@ -86,7 +125,12 @@ struct KaraokeView: View {
     @ViewBuilder
     var finalKaraokeView: some View {
         lyricsView()
-            .id(viewmodel.currentlyPlayingLyricsIndex)
+            .modifier(LyricFadeIn())
+            .id(viewmodel.currentlyPlayingKaraokeLyricsIndex)
+            .transition(.asymmetric(
+                insertion: .identity,
+                removal: .opacity.animation(.easeIn(duration: 0.2))
+            ))
             .lineLimit(2)
             .foregroundStyle(.white)
             .minimumScaleFactor(0.9)
@@ -97,10 +141,14 @@ struct KaraokeView: View {
                 if #available(macOS 26.0, *) {
                     Capsule()
                         .fill(currentAlbumArt.opacity(karaokeTransparency / 100))
+                        .animation(.easeIn(duration: 0.2), value: currentAlbumArt)
+                        .animation(.easeIn(duration: 0.2), value: karaokeTransparency)
                         .glassEffect(.regular, in: .capsule)
                 } else {
                     currentAlbumArt
                         .opacity(karaokeTransparency / 100)
+                        .animation(.easeIn(duration: 0.2), value: currentAlbumArt)
+                        .animation(.easeIn(duration: 0.2), value: karaokeTransparency)
                         .background(VisualEffectView().ignoresSafeArea())
                         .cornerRadius(16)
                 }
