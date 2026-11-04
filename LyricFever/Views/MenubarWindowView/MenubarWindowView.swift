@@ -528,11 +528,11 @@ struct MenubarWindowView: View {
         LaunchAtLogin.Toggle(String(localized: "Launch at Login"))
         .disabled(!viewmodel.userDefaultStorage.hasOnboarded)
         .keyboardShortcut("l")
-        Button("Check for Updates…") {
-            viewmodel.updaterService.updaterController.checkForUpdates(nil)
+        Button("View Releases…") {
+            openURL(viewmodel.updaterService.releasesURL)
         }
+        .keyboardShortcut("u")
         Divider()
-            .keyboardShortcut("u")
         Button("Buy Me A Beer (Thank You)!") {
             openURL(URL(string: "https://buymeacoffee.com/aviwadhwalyricfever")!)
         }
