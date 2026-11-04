@@ -16,7 +16,7 @@ struct KaraokeSettingsView: View {
     @AppStorage("karaokeModeHoveringSetting") var karaokeModeHoveringSetting: Bool = false
     @AppStorage("karaokeShowMultilingual") var karaokeShowMultilingual: Bool = true
     @AppStorage("karaokeTransparency") var karaokeTransparency: Double = 50
-    @AppStorage("karaokeTimingAdjustment") var karaokeTimingAdjustment: Double = 0
+    @AppStorage("karaokeTimingAdjustment") var karaokeTimingAdjustment: Double = -0.5
 
     private var timingDescription: String {
         if abs(karaokeTimingAdjustment) < 0.05 { return "Original timing" }
@@ -94,7 +94,7 @@ struct KaraokeSettingsView: View {
             Button("Reset to default") {
                 viewmodel.userDefaultStorage.karaokeModeHoveringSetting = false
                 karaokeUseAlbumColor = true
-                karaokeTimingAdjustment = 0
+                karaokeTimingAdjustment = -0.5
                 viewmodel.userDefaultStorage.karaokeShowMultilingual = true
                 viewmodel.userDefaultStorage.karaokeTransparency = 50
                 viewmodel.karaokeFont = NSFont.boldSystemFont(ofSize: 30)
