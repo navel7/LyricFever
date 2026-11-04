@@ -317,10 +317,7 @@ import MediaRemoteAdapter
         migrateTimestampsIfNeeded(context: coreDataContainer.viewContext)
         
         
-        // Check if user must urgently update (overrides menubar)
-        Task {
-            mustUpdateUrgent = await updaterService.urgentUpdateExists
-        }
+        // Manual fork releases do not enforce upstream emergency updates.
         
         // onAppear()
         print("on appear running")
