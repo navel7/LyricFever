@@ -94,6 +94,7 @@ class FloatingPanel<Content: View>: NSPanel {
         isMovableByWindowBackground = false
         hidesOnDeactivate = false
         backgroundColor = NSColor.clear
+        isOpaque = false
         standardWindowButton(.miniaturizeButton)?.isHidden = true
         standardWindowButton(.zoomButton)?.isHidden = true
 //        let glassview = NSGlassEffectView()

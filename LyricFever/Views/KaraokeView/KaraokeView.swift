@@ -94,15 +94,17 @@ struct KaraokeView: View {
             .padding(10)
             .padding(.horizontal, 10)
             .background {
-               currentAlbumArt
-               .transition(.opacity)
-               .opacity(karaokeTransparency/100)
-           }
-//           .drawingGroup()
-           .background(
-               VisualEffectView().ignoresSafeArea()
-           )
-           .cornerRadius(16)
+                if #available(macOS 26.0, *) {
+                    Capsule()
+                        .fill(currentAlbumArt.opacity(karaokeTransparency / 100))
+                        .glassEffect(.regular, in: .capsule)
+                } else {
+                    currentAlbumArt
+                        .opacity(karaokeTransparency / 100)
+                        .background(VisualEffectView().ignoresSafeArea())
+                        .cornerRadius(16)
+                }
+            }
             .onHover { hover in
                 if viewmodel.userDefaultStorage.karaokeModeHoveringSetting {
                     viewmodel.karaokeModeHovering = hover
