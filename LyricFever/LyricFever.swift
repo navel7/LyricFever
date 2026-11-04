@@ -89,7 +89,7 @@ struct LyricFever: App {
             }
             .floatingPanel(isPresented: $viewmodel.displayKaraoke) {
                 KaraokeView()
-                    .animation(.easeIn(duration: 0.2))
+                    .animation(.easeIn(duration: 0.1))
                     .environment(viewmodel)
             }
             .onAppear {
@@ -154,6 +154,9 @@ struct LyricFever: App {
             }
             .onChange(of: viewmodel.userDefaultStorage.cookie) {
                 viewmodel.spotifyLyricProvider.accessToken = nil
+            }
+            .onChange(of: viewmodel.userDefaultStorage.karaokeTimingAdjustment) {
+                viewmodel.startKaraokeLyricUpdater()
             }
             .onChange(of: viewmodel.isPlaying) {
                 if viewmodel.isPlaying, viewmodel.showLyrics, viewmodel.userDefaultStorage.hasOnboarded {

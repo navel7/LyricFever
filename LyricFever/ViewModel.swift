@@ -134,7 +134,8 @@ import MediaRemoteAdapter
     
     var animatedDisplay: Bool {
         get {
-            displayKaraoke || fullscreen
+            // Preserve the existing player-time compensation for the unshifted lyrics.
+            (showLyrics && isPlaying && userDefaultStorage.karaoke && !karaokeModeHovering && currentlyPlayingLyricsIndex != nil) || fullscreen
         }
         set {
             
@@ -147,7 +148,7 @@ import MediaRemoteAdapter
 
     var displayKaraoke: Bool {
         get {
-            showLyrics && isPlaying && userDefaultStorage.karaoke && !karaokeModeHovering && (currentlyPlayingLyricsIndex != nil)
+            showLyrics && isPlaying && userDefaultStorage.karaoke && !karaokeModeHovering && (currentlyPlayingKaraokeLyricsIndex != nil)
         }
         set {
             
@@ -175,6 +176,10 @@ import MediaRemoteAdapter
     var currentAlbumName: String?
     var currentlyPlayingLyrics: [LyricLine] = []
     var currentlyPlayingLyricsIndex: Int?
+    #if os(macOS)
+    var currentlyPlayingKaraokeLyricsIndex: Int?
+    private var karaokeLyricsUpdaterTask: Task<Void, Never>?
+    #endif
     var isPlaying: Bool = false
     var romanizedLyrics: [String] = []
     var chineseConversionLyrics: [String] = []
@@ -636,6 +641,7 @@ import MediaRemoteAdapter
             print("REOPEN: currentlyPlayingName is \(currentlyPlayingName)")
             currentlyPlayingAppleMusicPersistentID = appleMusicPlayer.persistentID
         }
+        startKaraokeLyricUpdater()
     }
     
     func spotifyPlaybackDidChange(_ notification: Notification) {
@@ -667,6 +673,7 @@ import MediaRemoteAdapter
             self.currentAlbumName = spotifyPlayer.albumName
             self.duration = duration
         }
+        startKaraokeLyricUpdater()
     }
     
     func onAppear(_ openWindow: OpenWindowAction) {
@@ -674,6 +681,10 @@ import MediaRemoteAdapter
     }
     
     func onCurrentlyPlayingIDChange() async {
+        #if os(macOS)
+        karaokeLyricsUpdaterTask?.cancel()
+        currentlyPlayingKaraokeLyricsIndex = nil
+        #endif
         currentlyPlayingLyricsIndex = nil
         currentlyPlayingLyrics = []
         translatedLyric = []
@@ -794,6 +805,9 @@ import MediaRemoteAdapter
     
     func startLyricUpdater() {
         currentLyricsUpdaterTask?.cancel()
+        #if os(macOS)
+        startKaraokeLyricUpdater()
+        #endif
         if !isPlaying || currentlyPlayingLyrics.isEmpty || mustUpdateUrgent {
             return
         }
@@ -838,7 +852,44 @@ import MediaRemoteAdapter
     func stopLyricUpdater() {
         print("stop called")
         currentLyricsUpdaterTask?.cancel()
+        #if os(macOS)
+        karaokeLyricsUpdaterTask?.cancel()
+        currentlyPlayingKaraokeLyricsIndex = nil
+        #endif
     }
+
+    #if os(macOS)
+    func startKaraokeLyricUpdater() {
+        karaokeLyricsUpdaterTask?.cancel()
+        guard isPlaying, showLyrics, userDefaultStorage.hasOnboarded,
+              !currentlyPlayingLyrics.isEmpty, !mustUpdateUrgent else {
+            currentlyPlayingKaraokeLyricsIndex = nil
+            return
+        }
+        karaokeLyricsUpdaterTask = Task {
+            do {
+                while !Task.isCancelled {
+                    guard let playbackTime = currentPlayerInstance.currentTime else {
+                        currentlyPlayingKaraokeLyricsIndex = nil
+                        return
+                    }
+                    let displayTime = playbackTime - userDefaultStorage.karaokeTimingAdjustment * 1000
+                    let nextIndex = currentlyPlayingLyrics.firstIndex { $0.startTimeMS > displayTime }
+                        ?? currentlyPlayingLyrics.count
+                    currentlyPlayingKaraokeLyricsIndex = nextIndex > 0 ? nextIndex - 1 : nil
+                    guard nextIndex < currentlyPlayingLyrics.count else { return }
+                    let delay = currentlyPlayingLyrics[nextIndex].startTimeMS - displayTime
+                    try await Task.sleep(nanoseconds: UInt64(delay * 1_000_000))
+                }
+            } catch is CancellationError {
+                // Playback, track, or timing changes replace the pending update.
+                return
+            } catch {
+                print("Karaoke lyric update failed: \(error)")
+            }
+        }
+    }
+    #endif
     
     func saveCoreData() {
         let context = coreDataContainer.viewContext

@@ -47,6 +47,8 @@ class UserDefaultStorage {
     @ObservationIgnored var karaokeShowMultilingual: Bool
     @ObservableUserDefault(.init(key: "karaokeTransparency", defaultValue: 50, store: .standard))
     @ObservationIgnored var karaokeTransparency: Double
+    @ObservableUserDefault(.init(key: "karaokeTimingAdjustment", defaultValue: 0.0, store: .standard))
+    @ObservationIgnored var karaokeTimingAdjustment: Double
 //    var fixedKaraokeColorHex: String = "#2D3CCC"
     
     // User setting: hide karaoke on hover

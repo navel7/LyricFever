@@ -61,7 +61,7 @@ struct KaraokeView: View {
     
     @ViewBuilder
     func lyricsView() -> some View {
-        if let currentlyPlayingLyricsIndex = viewmodel.currentlyPlayingLyricsIndex {
+        if let currentlyPlayingLyricsIndex = viewmodel.currentlyPlayingKaraokeLyricsIndex {
             if viewmodel.translationExists {
                 if karaokeShowMultilingual, originalAndTranslationAreDifferent(for: currentlyPlayingLyricsIndex) {
                     multilingualView(currentlyPlayingLyricsIndex)
@@ -86,7 +86,6 @@ struct KaraokeView: View {
     @ViewBuilder
     var finalKaraokeView: some View {
         lyricsView()
-            .id(viewmodel.currentlyPlayingLyricsIndex)
             .lineLimit(2)
             .foregroundStyle(.white)
             .minimumScaleFactor(0.9)
@@ -97,10 +96,14 @@ struct KaraokeView: View {
                 if #available(macOS 26.0, *) {
                     Capsule()
                         .fill(currentAlbumArt.opacity(karaokeTransparency / 100))
+                        .animation(.easeIn(duration: 0.2), value: currentAlbumArt)
+                        .animation(.easeIn(duration: 0.2), value: karaokeTransparency)
                         .glassEffect(.regular, in: .capsule)
                 } else {
                     currentAlbumArt
                         .opacity(karaokeTransparency / 100)
+                        .animation(.easeIn(duration: 0.2), value: currentAlbumArt)
+                        .animation(.easeIn(duration: 0.2), value: karaokeTransparency)
                         .background(VisualEffectView().ignoresSafeArea())
                         .cornerRadius(16)
                 }
