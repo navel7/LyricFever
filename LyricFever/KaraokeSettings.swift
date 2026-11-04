@@ -17,6 +17,13 @@ struct KaraokeSettingsView: View {
     @AppStorage("karaokeModeHoveringSetting") var karaokeModeHoveringSetting: Bool = false
     @AppStorage("karaokeShowMultilingual") var karaokeShowMultilingual: Bool = true
     @AppStorage("karaokeTransparency") var karaokeTransparency: Double = 50
+    @AppStorage("karaokeTimingAdjustment") var karaokeTimingAdjustment: Double = 0
+
+    private var timingDescription: String {
+        if abs(karaokeTimingAdjustment) < 0.05 { return "Original timing" }
+        let seconds = abs(karaokeTimingAdjustment).formatted(.number.precision(.fractionLength(2)))
+        return "\(seconds) s earlier"
+    }
     
     var colorBinding: Binding<Color> {
         Binding<Color> {
@@ -41,6 +48,17 @@ struct KaraokeSettingsView: View {
             .toggleStyle(.checkbox)
             .padding(.bottom, 20)
             
+            Text("Lyric timing: \(timingDescription)")
+            HStack {
+                Text("Earlier")
+                Slider(value: $karaokeTimingAdjustment, in: -2...0, step: 0.25)
+                    .accessibilityLabel("Karaoke lyric timing")
+                    .accessibilityValue(timingDescription)
+                Text("Original")
+            }
+            .frame(width: 300)
+            .padding(.bottom, 20)
+
             Text("Karaoke Background Appearance")
                     .font(.system(size: 15, weight: .bold))
             
@@ -73,6 +91,7 @@ struct KaraokeSettingsView: View {
             Button("Reset to default") {
                 viewmodel.userDefaultStorage.karaokeModeHoveringSetting = false
                 karaokeUseAlbumColor = true
+                karaokeTimingAdjustment = 0
                 viewmodel.userDefaultStorage.karaokeShowMultilingual = true
                 viewmodel.userDefaultStorage.karaokeTransparency = 50
                 viewmodel.karaokeFont = NSFont.boldSystemFont(ofSize: 30)
