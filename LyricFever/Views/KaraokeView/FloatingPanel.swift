@@ -27,7 +27,7 @@ struct FloatingPanelModifier<PanelContent: View>: ViewModifier {
         content
             .onAppear {
                 panel = FloatingPanel(view: view, contentRect: contentRect, isPresented: $isPresented)
-                panel?.center()
+                panel?.restoreSavedPosition()
                 if isPresented {
                     present()
                 }
@@ -68,6 +68,7 @@ extension EnvironmentValues {
 
 class FloatingPanel<Content: View>: NSPanel {
     @Binding var isPresented: Bool
+    private let savedFrameOriginKey = "karaokeWindowFrameOrigin"
     private var isSnappedToCenter: Bool = false
     private let snapThreshold: CGFloat = 25.0
     private var dragStartMouseLocation: NSPoint?
@@ -128,6 +129,7 @@ class FloatingPanel<Content: View>: NSPanel {
     
      
     override func close() {
+        saveFrameOrigin()
         NSAnimationContext.runAnimationGroup { animation in
             animation.completionHandler = {
                 super.close()
@@ -140,8 +142,34 @@ class FloatingPanel<Content: View>: NSPanel {
         return true
     }
     override func center() {
-        let rect = self.screen?.frame
-        self.setFrameOrigin(NSPoint(x: (rect!.width - self.frame.width)/2, y: (rect!.height - self.frame.height)/5))
+        guard let screen = self.screen ?? NSScreen.main ?? NSScreen.screens.first else { return }
+        let visibleFrame = screen.visibleFrame
+        setFrameOrigin(NSPoint(
+            x: visibleFrame.minX + max(0, (visibleFrame.width - frame.width) / 2),
+            y: visibleFrame.minY + max(0, (visibleFrame.height - frame.height) / 5)
+        ))
+    }
+
+    func restoreSavedPosition() {
+        if let savedOrigin = UserDefaults.standard.dictionary(forKey: savedFrameOriginKey),
+           let x = savedOrigin["x"] as? Double,
+           let y = savedOrigin["y"] as? Double,
+           x.isFinite, y.isFinite {
+            let savedFrame = NSRect(origin: NSPoint(x: x, y: y), size: frame.size)
+            if NSScreen.screens.contains(where: { $0.visibleFrame.contains(savedFrame) }) {
+                setFrameOrigin(savedFrame.origin)
+                return
+            }
+        }
+        center()
+        saveFrameOrigin()
+    }
+
+    private func saveFrameOrigin() {
+        UserDefaults.standard.set([
+            "x": Double(frame.origin.x),
+            "y": Double(frame.origin.y)
+        ], forKey: savedFrameOriginKey)
     }
 
     override func sendEvent(_ event: NSEvent) {
@@ -179,6 +207,7 @@ class FloatingPanel<Content: View>: NSPanel {
             self.setFrameOrigin(newOrigin)
             // Don't call super — AppKit would otherwise also try to move the window
         case .leftMouseUp:
+            saveFrameOrigin()
             dragStartMouseLocation = nil
             dragStartWindowOrigin = nil
             isSnappedToCenter = false
