@@ -26,7 +26,7 @@
 
 ## インストール方法
 
-1. [この改変版のReleasesページ](https://github.com/navel7/LyricFever/releases)からDMGをダウンロードします。
+1. [ダウンロード欄](https://github.com/navel7/LyricFever/releases/latest)からDMGをダウンロードします。
 2. Lyric Feverを起動している場合は終了します。
 3. DMGを開き、**Lyric Fever.app**を**Applications**へドラッグします。既存のアプリとの置き換えを求められた場合は、この版に置き換えてよいことを確認して進めます。
 4. 開発元を確認できないため起動がブロックされた場合は、**システム設定 → プライバシーとセキュリティ**を開きます。Lyric Feverがブロックされた旨の表示で**「このまま開く」**を選び、画面の案内に従ってください。配布元を信頼できる場合だけ行ってください。
