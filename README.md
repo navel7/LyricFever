@@ -1,6 +1,8 @@
-# Lyric Fever — navel7fork
+# Lyric Fever - navel7fork
 
 [日本語](README.ja.md)
+
+Lyric Fever is a Mac app that displays lyrics in sync with Apple Music or Spotify, bringing a karaoke-style experience to your desktop.
 
 This is a modified version of [Lyric Fever by aviwad](https://github.com/aviwad/LyricFever) v3.3, updated for macOS Tahoe and later. It adds Liquid Glass support and adjustable lyric timing, among other changes. It is released separately from the original app and is not an official release by its author.
 
@@ -26,7 +28,7 @@ When you first open it, macOS may say that the developer cannot be verified or t
 
 ## How to install
 
-1. Download the DMG from [this version's Releases page](https://github.com/navel7/LyricFever/releases).
+1. Download the DMG from [the download section](https://github.com/navel7/LyricFever/releases/latest).
 2. Quit Lyric Fever if it is running.
 3. Open the DMG and drag **Lyric Fever.app** onto **Applications**. If asked to replace an existing copy, confirm that you want to replace it with this version before proceeding.
 4. If macOS blocks the app because the developer cannot be verified, open **System Settings → Privacy & Security**. Find the message about Lyric Fever, select **Open Anyway**, and follow the prompts. Only do this if you trust the source.
