@@ -109,6 +109,15 @@ class FloatingPanel<Content: View>: NSPanel {
         contentView = hostingview
         hasShadow = false
     }
+
+    // Private AppKit selector; keep Tahoe's panel glass active without activating the panel.
+    @objc(_hasActiveAppearance)
+    dynamic func diagnosticHasActiveAppearance() -> Bool {
+        if #available(macOS 26.0, *) {
+            return true
+        }
+        return false
+    }
     
     override func resignMain() {
         super.resignMain()

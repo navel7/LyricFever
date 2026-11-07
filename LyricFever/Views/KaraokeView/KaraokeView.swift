@@ -96,8 +96,11 @@ struct KaraokeView: View {
             .background {
                 if #available(macOS 26.0, *) {
                     Capsule()
-                        .fill(currentAlbumArt.opacity(karaokeTransparency / 100))
-                        .glassEffect(.regular, in: .capsule)
+                        .fill(.clear)
+                        .glassEffect(
+                            .regular.tint(currentAlbumArt.opacity(karaokeTransparency / 100)),
+                            in: .capsule
+                        )
                 } else {
                     currentAlbumArt
                         .opacity(karaokeTransparency / 100)
