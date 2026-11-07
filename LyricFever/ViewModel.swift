@@ -1050,7 +1050,9 @@ import MediaRemoteAdapter
     
     #if os(macOS)
     func setNewLyricsColorTranslationRomanizationAndStartUpdater(with newLyrics: [LyricLine]) {
-        currentlyPlayingLyrics = newLyrics
+        currentlyPlayingLyrics = newLyrics.filter {
+            !$0.words.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+        }
         setBackgroundColor()
         fetchTranslationSourceLanguage()
         let _ = reloadTranslationConfigIfTranslating()
