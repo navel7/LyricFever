@@ -50,6 +50,7 @@ Run `brew install lyric-fever`
 - I interface with Spotify & Apple Music using their AppleScript methods as well as by subscribing to their playback state change notifications.
 - I interface with Spotify and Apple Music's AppleScript methods by using Apple's provided ScriptingBridge interface.
 - I additionally use private APIs to get the currently playing Apple Music song's iTunes ID, and use MusicKit to map that to an ISRC code
+- The karaoke window registers the private AppKit selector `_hasActiveAppearance` in every build. It returns `true` only on macOS Tahoe (26) and later, and `false` on older versions. This selector isn't public API; its interaction with macOS 15 is unverified, and it may change or stop working in future macOS releases.
 - I map Apple Music songs to equivalent Spotify ID using ISRC to display Lyrics fetched from Spotify for either platform
 - Lyrics are fetched from LRCLIB as a backup when Spotify fails
 - I fetch the song “background color” with each lyric, and the color is used for the karaoke mode window background 
