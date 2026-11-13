@@ -4293,6 +4293,24 @@
             "state" : "translated",
             "value" : "リリースを表示…"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "查看发布版本…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "檢視發行版本…"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "查看發行版本…"
+          }
         }
       }
     },
