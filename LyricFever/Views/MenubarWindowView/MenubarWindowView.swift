@@ -519,7 +519,7 @@ struct MenubarWindowView: View {
         Toggle("Show Song Details in Menubar", isOn: $viewmodel.userDefaultStorage.showSongDetailsInMenubar)
         Divider()
         streamingDelayView
-        Button("Settings (New Karaoke Settings!)") {
+        Button("Settings…") {
             openWindow(id: "onboarding")
             NSApplication.shared.activate(ignoringOtherApps: true)
             // send notification to check auth
