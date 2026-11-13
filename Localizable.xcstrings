@@ -481,9 +481,7 @@
         }
       }
     },
-    "Buy Me A Beer (Thank You)!" : {
-
-    },
+    "Buy Me A Beer (Thank You)!" : {},
     "Change fullscreen settings here!" : {
       "localizations" : {
         "zh-Hans" : {
@@ -1481,9 +1479,7 @@
         }
       }
     },
-    "More Options" : {
-
-    },
+    "More Options" : {},
     "More options, AirPlay delay enabled" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -3236,6 +3232,34 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "你已經登入咗 🙂"
+          }
+        }
+      }
+    },
+    "View Releases…" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "リリースを表示…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "查看发布版本…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "檢視發行版本…"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "查看發行版本…"
           }
         }
       }
