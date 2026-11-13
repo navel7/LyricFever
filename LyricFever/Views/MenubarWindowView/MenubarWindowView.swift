@@ -536,6 +536,9 @@ struct MenubarWindowView: View {
         Button("Buy Me A Beer (Thank You)!") {
             openURL(URL(string: "https://buymeacoffee.com/aviwadhwalyricfever")!)
         }
+        Button("Support the Fork Developer with a Coffee ☕️ (Thank You 🙏)") {
+            openURL(URL(string: "https://buymeacoffee.com/navel7")!)
+        }
     }
     
     @ViewBuilder

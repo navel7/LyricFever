@@ -4503,6 +4503,34 @@
           }
         }
       }
+    },
+    "Support the Fork Developer with a Coffee ☕️ (Thank You 🙏)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fork版開発者をコーヒーで支援する☕️（感謝🙏）"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请 Fork 版开发者喝杯咖啡 ☕️（感谢 🙏）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請 Fork 版開發者喝杯咖啡 ☕️（感謝 🙏）"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請 Fork 版開發者飲杯咖啡 ☕️（感謝 🙏）"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
