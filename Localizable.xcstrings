@@ -4105,6 +4105,24 @@
             "state" : "translated",
             "value" : "歌詞の表示タイミング：%@"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "歌词显示时间：%@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "歌詞顯示時間：%@"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "歌詞顯示時間：%@"
+          }
         }
       }
     },
@@ -4114,6 +4132,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "早める"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提前"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提早"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提早"
           }
         }
       }
@@ -4125,6 +4161,24 @@
             "state" : "translated",
             "value" : "元のタイミング"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "原始时间"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "原始時間"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "原始時間"
+          }
         }
       }
     },
@@ -4134,6 +4188,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "元のタイミング"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "原始时间"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "原始時間"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "原始時間"
           }
         }
       }
@@ -4145,6 +4217,24 @@
             "state" : "translated",
             "value" : "%@秒早く"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提前%@秒"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提早%@秒"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提早%@秒"
+          }
         }
       }
     },
@@ -4154,6 +4244,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "カラオケの歌詞表示タイミング"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "卡拉 OK 歌词显示时间"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "卡拉 OK 歌詞顯示時間"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "卡拉 OK 歌詞顯示時間"
           }
         }
       }
