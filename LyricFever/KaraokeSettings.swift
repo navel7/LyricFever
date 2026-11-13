@@ -19,9 +19,9 @@ struct KaraokeSettingsView: View {
     @AppStorage("karaokeTimingAdjustment") var karaokeTimingAdjustment: Double = -0.5
 
     private var timingDescription: String {
-        if abs(karaokeTimingAdjustment) < 0.05 { return "Original timing" }
+        if abs(karaokeTimingAdjustment) < 0.05 { return String(localized: "Original timing") }
         let seconds = abs(karaokeTimingAdjustment).formatted(.number.precision(.fractionLength(2)))
-        return "\(seconds) s earlier"
+        return String(localized: "\(seconds) s earlier")
     }
     
     var colorBinding: Binding<Color> {
