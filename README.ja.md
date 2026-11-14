@@ -28,7 +28,7 @@ LyricRiseは、Apple MusicやSpotifyで再生中の曲に合わせて、歌詞�
 
 ## インストール方法
 
-1. [ダウンロード欄](https://github.com/navel7/LyricFever/releases/latest)からDMGをダウンロードします。
+1. [ダウンロード欄](https://github.com/navel7/LyricRise/releases/latest)からDMGをダウンロードします。
 2. LyricRiseを起動している場合は終了します。
 3. DMGを開き、**LyricRise.app**を**Applications**へドラッグします。既存のアプリとの置き換えを求められた場合は、この版に置き換えてよいことを確認して進めます。
 4. 開発元を確認できないため起動がブロックされた場合は、**システム設定 → プライバシーとセキュリティ**を開きます。LyricRiseがブロックされた旨の表示で**「このまま開く」**を選び、画面の案内に従ってください。配布元を信頼できる場合だけ行ってください。
@@ -41,7 +41,7 @@ LyricRiseは、Apple MusicやSpotifyで再生中の曲に合わせて、歌詞�
 
 ## 不具合の報告
 
-この改変版に関する問題は、[navel7/LyricFeverのIssues](https://github.com/navel7/LyricFever/issues)へお願いします。macOSのバージョン、Apple MusicとSpotifyのどちらを使用しているか、問題が起きるまでの操作を添えてください。
+この改変版に関する問題は、[navel7/LyricRiseのIssues](https://github.com/navel7/LyricRise/issues)へお願いします。macOSのバージョン、Apple MusicとSpotifyのどちらを使用しているか、問題が起きるまでの操作を添えてください。
 
 自分用に改変したものですが、OSSの修正・公開は今回が初めてです。作法や公開方法などに誤りや至らない点がありましたら、ご指摘を歓迎します。
 

@@ -28,7 +28,7 @@ When you first open it, macOS may say that the developer cannot be verified or t
 
 ## How to install
 
-1. Download the DMG from [the download section](https://github.com/navel7/LyricFever/releases/latest).
+1. Download the DMG from [the download section](https://github.com/navel7/LyricRise/releases/latest).
 2. Quit LyricRise if it is running.
 3. Open the DMG and drag **LyricRise.app** onto **Applications**. If asked to replace an existing copy, confirm that you want to replace it with this version before proceeding.
 4. If macOS blocks the app because the developer cannot be verified, open **System Settings → Privacy & Security**. Find the message about LyricRise, select **Open Anyway**, and follow the prompts. Only do this if you trust the source.
@@ -41,7 +41,7 @@ This version has **no automatic update feature**. Use **View Releases…** to op
 
 ## Reporting problems
 
-Please report problems with this modified version to [navel7/LyricFever Issues](https://github.com/navel7/LyricFever/issues). Include your macOS version, whether you use Apple Music or Spotify, and the steps that led to the problem.
+Please report problems with this modified version to [navel7/LyricRise Issues](https://github.com/navel7/LyricRise/issues). Include your macOS version, whether you use Apple Music or Spotify, and the steps that led to the problem.
 
 This is a personal modification and my first time modifying and publishing an open-source project. Feedback on anything I may have overlooked, including open-source conventions and release practices, is welcome.
 

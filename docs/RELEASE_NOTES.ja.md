@@ -1,4 +1,4 @@
-# Lyric Fever — navel7fork
+# LyricRise
 
 [English](RELEASE_NOTES.md)
 
@@ -15,7 +15,7 @@
 
 - **macOS 15以降**と、**Apple MusicまたはSpotifyのデスクトップアプリ**が必要です。
 - 今回のDMGは**Apple Silicon搭載Mac（M1以降）専用**です。Intel Macには対応していません。
-- 元のアプリに上書きすると、改変版に置き換わります。設定や保存済みの歌詞は共用される場合があります。元に戻したい場合に備えて元のアプリを保管し、両方を同時に起動しないでください。
+- LyricRiseは元のLyric Feverとは別のアプリとしてインストールされます。初回起動時に旧アプリの設定を引き継げます。保存済みの歌詞は引き継ぎません。
 - 動作確認はmacOS Golden Gate 27.2のみで実施しています。
 
 ## 初回起動時の警告について
@@ -26,11 +26,12 @@
 
 ## インストール方法
 
-1. [ダウンロード欄](https://github.com/navel7/LyricFever/releases/latest)からDMGをダウンロードします。
-2. Lyric Feverを起動している場合は終了します。
-3. DMGを開き、**Lyric Fever.app**を**Applications**へドラッグします。既存のアプリとの置き換えを求められた場合は、この版に置き換えてよいことを確認して進めます。
-4. 開発元を確認できないため起動がブロックされた場合は、**システム設定 → プライバシーとセキュリティ**を開きます。Lyric Feverがブロックされた旨の表示で**「このまま開く」**を選び、画面の案内に従ってください。配布元を信頼できる場合だけ行ってください。
-5. Apple MusicやSpotifyの操作許可を求められた場合は、許可してください。再生状況の取得に必要です。元のアプリを使用していた場合でも、再度求められることがあります。
+1. [ダウンロード欄](https://github.com/navel7/LyricRise/releases/latest)からDMGをダウンロードします。
+2. LyricRiseを起動している場合は終了します。
+3. DMGを開き、**LyricRise.app**を**Applications**へドラッグします。既存のLyricRiseとの置き換えを求められた場合は、置き換えてよいことを確認して進めます。
+4. 開発元を確認できないため起動がブロックされた場合は、**システム設定 → プライバシーとセキュリティ**を開きます。LyricRiseがブロックされた旨の表示で**「このまま開く」**を選び、画面の案内に従ってください。配布元を信頼できる場合だけ行ってください。
+5. 初回起動時に、Lyric Feverの設定を引き継ぐか選びます。引き継ぐ場合は、ファイル選択画面で**`com.aviwadhwa.SpotifyLyricsInMenubar.plist`**を選んでください。
+6. Apple MusicやSpotifyの操作許可を求められた場合は、許可してください。再生状況の取得に必要です。アプリの識別子が変わるため、以前許可した場合でも再度求められることがあります。
 
 ## 更新方法
 
@@ -38,4 +39,4 @@
 
 ## 不具合の報告
 
-この改変版に関する問題は、[navel7/LyricFeverのIssues](https://github.com/navel7/LyricFever/issues)へお願いします。macOSのバージョン、Apple MusicとSpotifyのどちらを使用しているか、問題が起きるまでの操作を添えてください。
+この改変版に関する問題は、[navel7/LyricRiseのIssues](https://github.com/navel7/LyricRise/issues)へお願いします。macOSのバージョン、Apple MusicとSpotifyのどちらを使用しているか、問題が起きるまでの操作を添えてください。
