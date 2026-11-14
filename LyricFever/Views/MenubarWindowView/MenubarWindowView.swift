@@ -38,11 +38,8 @@ struct MenubarWindowView: View {
                     .shadow(color: viewmodel.currentBackground ?? .clear, radius: 70)
                     .shadow(color: viewmodel.currentBackground ?? .clear, radius: 70)
             } else {
-                Image(systemName: "music.note.list")
+                Image("LyricRiseIcon")
                     .resizable()
-                    .shadow(radius: 1)
-                    .scaleEffect(0.5)
-                    .background(.gray)
                     .frame(width: 112, height: 112)
                     .clipShape(.rect(cornerRadius: 9))
             }
@@ -176,7 +173,7 @@ struct MenubarWindowView: View {
     @ViewBuilder
     var lyricModifierView: some View {
         HStack {
-            MenubarButton(buttonText: "", imageText: "music.note.list", buttonState: displayLyrics) {
+            MenubarButton(buttonText: "", imageText: "", buttonState: displayLyrics, assetName: "LyricRiseTrayIcon") {
                 viewmodel.showLyrics.toggle()
             }
             .onHover { isHovering in

@@ -58,9 +58,10 @@ struct MainSettingsView: View {
     
     @ViewBuilder
     var onboardView: some View {
-        Image("hi")
+        Image("LyricRiseIcon")
             .resizable()
             .frame(width: 150, height: 150, alignment: .center)
+            .clipShape(.rect(cornerRadius: 30))
                     
         Text("Welcome to Lyric Fever! 🎉")
             .font(.largeTitle)

@@ -54,7 +54,11 @@ struct MenubarLabelView: View {
             if let menuBarTitle {
                 Text(menuBarTitle.trunc())
             } else {
-                Image(systemName: "music.note.list")
+                Image("LyricRiseTrayIcon")
+                    .renderingMode(.template)
+                    .resizable()
+                    .interpolation(.high)
+                    .frame(width: 18, height: 18)
             }
         }
     }

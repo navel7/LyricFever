@@ -12,6 +12,7 @@ public struct MenubarButton: View {
     let imageText: String
 //    let fillStyle: AnyShapeStyle = AnyShapeStyle(.thickMaterial)
     let buttonState: ButtonState
+    var assetName: String? = nil
     let onClick: () -> Void
     
     var disabled: Bool {
@@ -24,8 +25,16 @@ public struct MenubarButton: View {
         } label: {
             VStack(spacing: 5) {
                 ZStack {
-                    Image(systemName: imageText)
-                        .bold()
+                    if let assetName {
+                        Image(assetName)
+                            .renderingMode(.template)
+                            .resizable()
+                            .interpolation(.high)
+                            .frame(width: 18, height: 18)
+                    } else {
+                        Image(systemName: imageText)
+                            .bold()
+                    }
                     if disabled {
                         Capsule()
                             .fill(Color.white)
