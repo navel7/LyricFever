@@ -1,4 +1,4 @@
-# LyricRise - navel7fork
+# LyricRise
 
 [English](README.md)
 
