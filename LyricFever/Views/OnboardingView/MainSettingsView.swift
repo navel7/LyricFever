@@ -63,7 +63,7 @@ struct MainSettingsView: View {
             .frame(width: 150, height: 150, alignment: .center)
             .clipShape(.rect(cornerRadius: 30))
                     
-        Text("Welcome to Lyric Fever! 🎉")
+        Text("Welcome to LyricRise! 🎉")
             .font(.largeTitle)
                     
         Text("Please pick between Spotify and Apple Music")
@@ -150,7 +150,7 @@ struct MainSettingsView: View {
                 VStack {
                     Text("Email me at [aviwad@gmail.com](mailto:aviwad@gmail.com) for any support")
                     Text("⚠️ Disclaimer: I do not own the rights to Spotify or the lyric content presented.\nMusixmatch and Spotify own all rights to the lyrics.\nTranslations by InTheManXG and ARui-tw")
-                    Text("[Lyric Fever GitHub](https://github.com/aviwad/LyricFever)\nVersion 3.3")
+                    Text("[LyricRise GitHub](https://github.com/navel7/LyricFever)\nVersion 3.3")
                 }
                     .multilineTextAlignment(.center)
                     .font(.callout)

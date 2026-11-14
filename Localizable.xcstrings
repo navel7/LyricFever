@@ -90,18 +90,18 @@
         }
       }
     },
-    "[Lyric Fever GitHub](https://github.com/aviwad/LyricFever)\nVersion 3.3" : {
+    "[LyricRise GitHub](https://github.com/navel7/LyricFever)\nVersion 3.3" : {
       "localizations" : {
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "[Lyric Fever GitHub](https://github.com/aviwad/LyricFever)\n版本 3.3"
+            "value" : "[LyricRise GitHub](https://github.com/navel7/LyricFever)\n版本 3.3"
           }
         },
         "zh-Hant-HK" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "[Lyric Fever GitHub](https://github.com/aviwad/LyricFever)\n版本 3.3"
+            "value" : "[LyricRise GitHub](https://github.com/navel7/LyricFever)\n版本 3.3"
           }
         }
       }
@@ -1527,120 +1527,120 @@
         }
       }
     },
-    "Lyric Fever: Fullscreen" : {
+    "LyricRise: Fullscreen" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lyric Fever: 全屏"
+            "value" : "LyricRise: 全屏"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lyric Fever：全螢幕"
+            "value" : "LyricRise：全螢幕"
           }
         },
         "zh-Hant-HK" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lyric Fever：全螢幕"
+            "value" : "LyricRise：全螢幕"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lyric Fever：フルスクリーン"
+            "value" : "LyricRise：フルスクリーン"
           }
         }
       }
     },
-    "Lyric Fever: Onboarding" : {
+    "LyricRise: Onboarding" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lyric Fever: 引导"
+            "value" : "LyricRise: 引导"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lyric Fever：引導"
+            "value" : "LyricRise：引導"
           }
         },
         "zh-Hant-HK" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lyric Fever：快速上手"
+            "value" : "LyricRise：快速上手"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lyric Fever：初期設定"
+            "value" : "LyricRise：初期設定"
           }
         }
       }
     },
-    "Lyric Fever: Searching for %@ by %@" : {
+    "LyricRise: Searching for %@ by %@" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Lyric Fever: Searching for %1$@ by %2$@"
+            "value" : "LyricRise: Searching for %1$@ by %2$@"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lyric Fever: 搜索 %2$@ 的 %1$@"
+            "value" : "LyricRise: 搜索 %2$@ 的 %1$@"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lyric Fever：搜尋由 %2$@ 演唱的 %1$@"
+            "value" : "LyricRise：搜尋由 %2$@ 演唱的 %1$@"
           }
         },
         "zh-Hant-HK" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lyric Fever：搵緊 %2$@ 嘅 %1$@"
+            "value" : "LyricRise：搵緊 %2$@ 嘅 %1$@"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lyric Fever：%@（%@）を検索中"
+            "value" : "LyricRise：%@（%@）を検索中"
           }
         }
       }
     },
-    "Lyric Fever: Update 2.3" : {
+    "LyricRise: Update 2.3" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lyric Fever: 更新 2.3"
+            "value" : "LyricRise: 更新 2.3"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lyric Fever：2.3 更新紀錄"
+            "value" : "LyricRise：2.3 更新紀錄"
           }
         },
         "zh-Hant-HK" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lyric Fever：更新 2.3"
+            "value" : "LyricRise：更新 2.3"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lyric Fever：アップデート 2.3"
+            "value" : "LyricRise：アップデート 2.3"
           }
         }
       }
@@ -2619,30 +2619,30 @@
         }
       }
     },
-    "Quit Lyric Fever (⌘ + Q)" : {
+    "Quit LyricRise (⌘ + Q)" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "退出 Lyric Fever (⌘ + Q)"
+            "value" : "退出 LyricRise (⌘ + Q)"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "退出 Lyric Fever（⌘ + Q）"
+            "value" : "退出 LyricRise（⌘ + Q）"
           }
         },
         "zh-Hant-HK" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "退出 Lyric Fever（⌘ + Q）"
+            "value" : "退出 LyricRise（⌘ + Q）"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lyric Feverを終了（⌘ + Q）"
+            "value" : "LyricRiseを終了（⌘ + Q）"
           }
         }
       }
@@ -3958,30 +3958,30 @@
         }
       }
     },
-    "Welcome to Lyric Fever! 🎉" : {
+    "Welcome to LyricRise! 🎉" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "欢迎使用 Lyric Fever! 🎉"
+            "value" : "欢迎使用 LyricRise! 🎉"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "歡迎使用 Lyric Fever！🎉"
+            "value" : "歡迎使用 LyricRise！🎉"
           }
         },
         "zh-Hant-HK" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "歡迎嚟到 Lyric Fever！🎉"
+            "value" : "歡迎嚟到 LyricRise！🎉"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lyric Feverへようこそ！ 🎉"
+            "value" : "LyricRiseへようこそ！ 🎉"
           }
         }
       }
@@ -4528,6 +4528,342 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "請 Fork 版開發者飲杯咖啡 ☕️（感謝 🙏）"
+          }
+        }
+      }
+    },
+    "Import settings from Lyric Fever?" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lyric Feverの設定を引き継ぎますか？"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "要导入 Lyric Fever 的设置吗？"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "要匯入 Lyric Fever 的設定嗎？"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "要匯入 Lyric Fever 嘅設定嗎？"
+          }
+        }
+      }
+    },
+    "To keep your settings, select the old preferences file: com.aviwadhwa.SpotifyLyricsInMenubar.plist. You can also start with new settings." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定を引き継ぐ場合は、旧設定ファイル「com.aviwadhwa.SpotifyLyricsInMenubar.plist」を選んでください。新しい設定で始めることもできます。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "如要保留设置，请选择旧设置文件 com.aviwadhwa.SpotifyLyricsInMenubar.plist。也可以使用新设置开始。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "如要保留設定，請選擇舊設定檔案 com.aviwadhwa.SpotifyLyricsInMenubar.plist。也可以使用新設定開始。"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "想保留設定，請揀舊設定檔案 com.aviwadhwa.SpotifyLyricsInMenubar.plist。亦可以用新設定開始。"
+          }
+        }
+      }
+    },
+    "Import Settings" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定を引き継ぐ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "导入设置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "匯入設定"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "匯入設定"
+          }
+        }
+      }
+    },
+    "Start Fresh" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新規に始める"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用新设置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用新設定"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用新設定開始"
+          }
+        }
+      }
+    },
+    "Select Lyric Fever Settings" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lyric Feverの設定を選択"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择 Lyric Fever 设置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇 Lyric Fever 設定"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "揀 Lyric Fever 設定"
+          }
+        }
+      }
+    },
+    "Select com.aviwadhwa.SpotifyLyricsInMenubar.plist" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "com.aviwadhwa.SpotifyLyricsInMenubar.plist を選んでください"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请选择 com.aviwadhwa.SpotifyLyricsInMenubar.plist"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請選擇 com.aviwadhwa.SpotifyLyricsInMenubar.plist"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請揀 com.aviwadhwa.SpotifyLyricsInMenubar.plist"
+          }
+        }
+      }
+    },
+    "Import" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "読み込む"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "导入"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "匯入"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "匯入"
+          }
+        }
+      }
+    },
+    "Could not import settings" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定を読み込めませんでした"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法导入设置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法匯入設定"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法匯入設定"
+          }
+        }
+      }
+    },
+    "Try Again" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "やり直す"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重试"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重試"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再試"
+          }
+        }
+      }
+    },
+    "Choose com.aviwadhwa.SpotifyLyricsInMenubar.plist." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "com.aviwadhwa.SpotifyLyricsInMenubar.plist を選んでください。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请选择 com.aviwadhwa.SpotifyLyricsInMenubar.plist。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請選擇 com.aviwadhwa.SpotifyLyricsInMenubar.plist。"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請揀 com.aviwadhwa.SpotifyLyricsInMenubar.plist。"
+          }
+        }
+      }
+    },
+    "The selected file is not a valid settings file." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選択したファイルは有効な設定ファイルではありません。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所选文件不是有效的设置文件。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所選檔案不是有效的設定檔案。"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "揀選嘅檔案唔係有效嘅設定檔案。"
+          }
+        }
+      }
+    },
+    "Preparing LyricRise…" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LyricRiseを準備しています…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在准备 LyricRise…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在準備 LyricRise…"
+          }
+        },
+        "zh-Hant-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "準備緊 LyricRise…"
           }
         }
       }

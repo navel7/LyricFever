@@ -25,16 +25,21 @@ enum MusicType {
 
 @main
 struct LyricFever: App {
-    @State var viewmodel = ViewModel.shared
+    @State private var viewmodel: ViewModel?
     @Environment(\.openWindow) var openWindow
     @Environment(\.openURL) var openURL
     
     var body: some Scene {
         MenuBarExtra {
-            MenubarWindowView()
-                .preferredColorScheme(.dark)
-                .environment(viewmodel)
+            if let viewmodel {
+                MenubarWindowView()
+                    .preferredColorScheme(.dark)
+                    .environment(viewmodel)
+            } else {
+                Text("Preparing LyricRise…")
+            }
         } label: {
+            if let viewmodel {
             // Text(Image) Doesn't render propertly in MenubarExtra. Stupid Apple. Must resort to if/else
             MenubarLabelView()
                 .environment(viewmodel)
@@ -87,7 +92,7 @@ struct LyricFever: App {
             .onChange(of: viewmodel.showLyrics) {
                 viewmodel.toggleLyrics()
             }
-            .floatingPanel(isPresented: $viewmodel.displayKaraoke) {
+            .floatingPanel(isPresented: Binding(get: { viewmodel.displayKaraoke }, set: { viewmodel.displayKaraoke = $0 })) {
                 KaraokeView()
                     .environment(viewmodel)
             }
@@ -179,9 +184,17 @@ struct LyricFever: App {
                     await viewmodel.onCurrentlyPlayingIDChange()
                 }
             }
+            } else {
+                Text("LyricRise")
+                    .task {
+                        await LegacyPreferencesMigration.prepareForLaunch()
+                        viewmodel = ViewModel.shared
+                    }
+            }
         }
         .menuBarExtraStyle(.window)
-        Window("Lyric Fever: Fullscreen", id: "fullscreen") {
+        Window("LyricRise: Fullscreen", id: "fullscreen") {
+            if let viewmodel {
             FullscreenView()
                 .windowFullScreenBehavior(.enabled)
                 .preferredColorScheme(.dark)
@@ -206,9 +219,11 @@ struct LyricFever: App {
                     NSApp.setActivationPolicy(.accessory)
                     viewmodel.fullscreen = false
                 }
+            }
         }
         .defaultSize(width: NSScreen.mainWidth, height: NSScreen.mainHeight)
-        Window("Lyric Fever: Onboarding", id: "onboarding") { // << here !!
+        Window("LyricRise: Onboarding", id: "onboarding") { // << here !!
+            if let viewmodel {
             OnboardingWindow().frame(minWidth: 700, maxWidth: 700, minHeight: 600, maxHeight: 600, alignment: .center)
                 .environment(viewmodel)
                 .preferredColorScheme(.dark)
@@ -220,11 +235,13 @@ struct LyricFever: App {
                         NSApp.setActivationPolicy(.accessory)
                     }
                 }
+            }
         }
         .windowResizability(.contentSize)
         .windowStyle(.hiddenTitleBar)
         .windowLevel(.floating)
-        Window("Lyric Fever: Searching for \(viewmodel.currentlyPlayingName ?? "-") by \(viewmodel.currentlyPlayingArtist ?? "-")", id: "search") {
+        Window("LyricRise: Searching for \(viewmodel?.currentlyPlayingName ?? "-") by \(viewmodel?.currentlyPlayingArtist ?? "-")", id: "search") {
+            if let viewmodel {
             SearchWindow().frame(minWidth: 700, maxWidth: 700, minHeight: 500, maxHeight: 500, alignment: .center)
                 .environment(viewmodel)
                 .preferredColorScheme(.dark)
@@ -236,9 +253,11 @@ struct LyricFever: App {
                         NSApp.setActivationPolicy(.accessory)
                     }
                 }
+            }
         }
         .windowResizability(.contentSize)
-        Window("Lyric Fever: Update 2.3", id: "update") { // << here !!
+        Window("LyricRise: Update 2.3", id: "update") { // << here !!
+            if let viewmodel {
             UpdateWindow().frame(minWidth: 700, maxWidth: 700, alignment: .center)
                 .environment(viewmodel)
                 .preferredColorScheme(.dark)
@@ -250,6 +269,7 @@ struct LyricFever: App {
                         NSApp.setActivationPolicy(.accessory)
                     }
                 }
+            }
         }
             .windowResizability(.contentSize)
             .windowStyle(.hiddenTitleBar)
