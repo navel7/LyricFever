@@ -15,7 +15,7 @@ class LRCLIBLyricProvider: LyricProvider {
     
     init() {
 //        LRCLIBUserAgentConfig.httpAdditionalHeaders = ["User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_6_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Safari/605.1.15"]
-        LRCLIBUserAgentConfig.httpAdditionalHeaders = ["User-Agent": "LyricRise v3.3 (https://github.com/navel7/LyricFever)"]
+        LRCLIBUserAgentConfig.httpAdditionalHeaders = ["User-Agent": "LyricRise v3.3 (https://github.com/navel7/LyricRise)"]
         LRCLIBUserAgentSession = URLSession(configuration: LRCLIBUserAgentConfig)
     }
     

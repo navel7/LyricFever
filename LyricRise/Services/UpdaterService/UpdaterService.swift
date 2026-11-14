@@ -9,5 +9,5 @@ import Foundation
 
 // Fork releases are downloaded and installed manually; never start the upstream updater.
 class UpdaterService {
-    let releasesURL = URL(string: "https://github.com/navel7/LyricFever/releases")!
+    let releasesURL = URL(string: "https://github.com/navel7/LyricRise/releases")!
 }
