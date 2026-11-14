@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1A111111111111111111112 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A1A111111111111111111111 /* InfoPlist.xcstrings */; };
+		8F0D66DC2E99CC5D00976881 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8F0D66DB2E99CC5D00976881 /* Localizable.xcstrings */; };
+		8F0E98952EE24713008A50A4 /* MenuBarExtraAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 8F0E98942EE24713008A50A4 /* MenuBarExtraAccess */; };
+		8F1198722E72B9840011A962 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 8F1198712E72B9840011A962 /* KeyboardShortcuts */; };
+		8F1198742E72B9C60011A962 /* GlobalKeyboardShortcutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1198732E72B9C50011A962 /* GlobalKeyboardShortcutsView.swift */; };
+		8F1979952DA72D49008C113D /* IPADic in Frameworks */ = {isa = PBXBuildFile; productRef = 8F1979942DA72D49008C113D /* IPADic */; };
+		8F1979972DA72D49008C113D /* Mecab-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 8F1979962DA72D49008C113D /* Mecab-Swift */; };
+		8F28BFD42D578456002E2CE6 /* KaraokeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F28BFD32D578456002E2CE6 /* KaraokeSettings.swift */; };
+		8F28FDC22AA25D2700439D8D /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 8F28FDC12AA25D2700439D8D /* Sparkle */; };
+		8F2922C02E94DE0700B286FC /* MediaRemoteAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = 8F2922BF2E94DE0700B286FC /* MediaRemoteAdapter */; };
+		8F2922C12E94DEFF00B286FC /* MediaRemoteAdapter in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 8F2922BF2E94DE0700B286FC /* MediaRemoteAdapter */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8F37323D2E6EC9C90075CDA7 /* OpenCC in Frameworks */ = {isa = PBXBuildFile; productRef = 8F37323C2E6EC9C90075CDA7 /* OpenCC */; };
+		8F4F49522A7EC32D00097888 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		8F6BD2952A8A61C9008BBF88 /* AmplitudeSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8F6BD2942A8A61C9008BBF88 /* AmplitudeSwift */; };
+		8F6BD2972A8A6278008BBF88 /* amplitudeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BD2962A8A6278008BBF88 /* amplitudeKey.swift */; };
+		8F6BD2992A8A6B7D008BBF88 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BD2982A8A6B7D008BBF88 /* ViewModel.swift */; };
+		8F8196872D93CCDC00F03741 /* StringMetric in Frameworks */ = {isa = PBXBuildFile; productRef = 8F8196862D93CCDC00F03741 /* StringMetric */; };
+		8F832CAD2D6BEC52008C1C2B /* FontPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 8F832CAC2D6BEC52008C1C2B /* FontPicker */; };
+		8F89E1112C90DA4900F511EB /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 8F89E1102C90DA4900F511EB /* LaunchAtLogin */; };
+		8F9B71A22F55F19400214019 /* ObservableUserDefault in Frameworks */ = {isa = PBXBuildFile; productRef = 8F9B71A12F55F19400214019 /* ObservableUserDefault */; };
+		8FA436AE2BC49D480072016C /* newPermissionMac.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FA436AD2BC49D480072016C /* newPermissionMac.gif */; };
+		8FA4E9782CE73DB900CEEF35 /* ColorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8FA4E9772CE73DB900CEEF35 /* ColorKit */; };
+		8FC8E9492A704EEB00F69915 /* LyricRise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC8E9482A704EEB00F69915 /* LyricRise.swift */; };
+		8FCFD1C32AE35DEA00B22023 /* spotifylogin.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FCFD1C22AE35DEA00B22023 /* spotifylogin.gif */; };
+		8FEF70F72D8B5CE40069AC01 /* Update22Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEF70F62D8B5CE40069AC01 /* Update22Window.swift */; };
+		8FFA9F342AA1B3CB00BAEC5C /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8FFA9F332AA1B3CB00BAEC5C /* SDWebImageSwiftUI */; };
+		8FFA9F382AA1B63500BAEC5C /* crossfade.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FFA9F362AA1B63500BAEC5C /* crossfade.gif */; };
+		8FFED07B2D8A26E700EA1510 /* SwiftOTP in Frameworks */ = {isa = PBXBuildFile; productRef = 8FFED07A2D8A26E700EA1510 /* SwiftOTP */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8F2922C22E94DEFF00B286FC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8F2922C12E94DEFF00B286FC /* MediaRemoteAdapter in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A1A111111111111111111111 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		8F0D66DB2E99CC5D00976881 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		8F1198732E72B9C50011A962 /* GlobalKeyboardShortcutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalKeyboardShortcutsView.swift; sourceTree = "<group>"; };
+		8F28BFD32D578456002E2CE6 /* KaraokeSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaraokeSettings.swift; sourceTree = "<group>"; };
+		8F6BD2962A8A6278008BBF88 /* amplitudeKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amplitudeKey.swift; sourceTree = "<group>"; };
+		8F6BD2982A8A6B7D008BBF88 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		8FA436AD2BC49D480072016C /* newPermissionMac.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = newPermissionMac.gif; sourceTree = "<group>"; };
+		8FC8E9452A704EEB00F69915 /* LyricRise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LyricRise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC8E9482A704EEB00F69915 /* LyricRise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricRise.swift; sourceTree = "<group>"; };
+		8FCFD1C22AE35DEA00B22023 /* spotifylogin.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spotifylogin.gif; sourceTree = "<group>"; };
+		8FEF70F62D8B5CE40069AC01 /* Update22Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Update22Window.swift; sourceTree = "<group>"; };
+		8FFA9F362AA1B63500BAEC5C /* crossfade.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = crossfade.gif; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8F4D208C2E013333004A12CA /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8FC8E9442A704EEB00F69915 /* LyricRise */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8F4C0B7E2E355C1000D748AA /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
+		8F4D20712DFFAEB0004A12CA /* LyricProvider */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = LyricProvider; sourceTree = "<group>"; };
+		8F4D20782E0131A4004A12CA /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+		8F4D20792E013221004A12CA /* Players */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Players; sourceTree = "<group>"; };
+		8F4D20852E013263004A12CA /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
+		8F4D208B2E0132B4004A12CA /* Support Files */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (8F4D208C2E013333004A12CA /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Support Files"; sourceTree = "<group>"; };
+		8FB58B862E29ED5C002B307D /* Past Updates */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Past Updates"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FC8E9422A704EEB00F69915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F9B71A22F55F19400214019 /* ObservableUserDefault in Frameworks */,
+				8F37323D2E6EC9C90075CDA7 /* OpenCC in Frameworks */,
+				8F1198722E72B9840011A962 /* KeyboardShortcuts in Frameworks */,
+				8F0E98952EE24713008A50A4 /* MenuBarExtraAccess in Frameworks */,
+				8F1979952DA72D49008C113D /* IPADic in Frameworks */,
+				8F1979972DA72D49008C113D /* Mecab-Swift in Frameworks */,
+				8FFED07B2D8A26E700EA1510 /* SwiftOTP in Frameworks */,
+				8FA4E9782CE73DB900CEEF35 /* ColorKit in Frameworks */,
+				8F28FDC22AA25D2700439D8D /* Sparkle in Frameworks */,
+				8F832CAD2D6BEC52008C1C2B /* FontPicker in Frameworks */,
+				8F8196872D93CCDC00F03741 /* StringMetric in Frameworks */,
+				8FFA9F342AA1B3CB00BAEC5C /* SDWebImageSwiftUI in Frameworks */,
+				8F89E1112C90DA4900F511EB /* LaunchAtLogin in Frameworks */,
+				8F2922C02E94DE0700B286FC /* MediaRemoteAdapter in Frameworks */,
+				8F6BD2952A8A61C9008BBF88 /* AmplitudeSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FC1F4E42A7969C70043D92A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FC8E93C2A704EEB00F69915 = {
+			isa = PBXGroup;
+			children = (
+				8FCFD1C22AE35DEA00B22023 /* spotifylogin.gif */,
+				8F0D66DB2E99CC5D00976881 /* Localizable.xcstrings */,
+				A1A111111111111111111111 /* InfoPlist.xcstrings */,
+				8FFA9F362AA1B63500BAEC5C /* crossfade.gif */,
+				8FA436AD2BC49D480072016C /* newPermissionMac.gif */,
+				8FC8E9472A704EEB00F69915 /* LyricRise */,
+				8FC8E9462A704EEB00F69915 /* Products */,
+				8FC1F4E42A7969C70043D92A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8FC8E9462A704EEB00F69915 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FC8E9452A704EEB00F69915 /* LyricRise.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FC8E9472A704EEB00F69915 /* LyricRise */ = {
+			isa = PBXGroup;
+			children = (
+				8F4C0B7E2E355C1000D748AA /* Services */,
+				8FB58B862E29ED5C002B307D /* Past Updates */,
+				8F4D208B2E0132B4004A12CA /* Support Files */,
+				8F4D20852E013263004A12CA /* Views */,
+				8F4D20792E013221004A12CA /* Players */,
+				8F4D20782E0131A4004A12CA /* Models */,
+				8F4D20712DFFAEB0004A12CA /* LyricProvider */,
+				8FC8E9482A704EEB00F69915 /* LyricRise.swift */,
+				8FEF70F62D8B5CE40069AC01 /* Update22Window.swift */,
+				8F28BFD32D578456002E2CE6 /* KaraokeSettings.swift */,
+				8F1198732E72B9C50011A962 /* GlobalKeyboardShortcutsView.swift */,
+				8F6BD2982A8A6B7D008BBF88 /* ViewModel.swift */,
+				8F6BD2962A8A6278008BBF88 /* amplitudeKey.swift */,
+			);
+			path = LyricRise;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FC8E9442A704EEB00F69915 /* LyricRise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FC8E9542A704EED00F69915 /* Build configuration list for PBXNativeTarget "LyricRise" */;
+			buildPhases = (
+				8FC8E9412A704EEB00F69915 /* Sources */,
+				8FC8E9422A704EEB00F69915 /* Frameworks */,
+				8FC8E9432A704EEB00F69915 /* Resources */,
+				8F2922C22E94DEFF00B286FC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8F4C0B7E2E355C1000D748AA /* Services */,
+				8F4D20712DFFAEB0004A12CA /* LyricProvider */,
+				8F4D20782E0131A4004A12CA /* Models */,
+				8F4D20792E013221004A12CA /* Players */,
+				8F4D20852E013263004A12CA /* Views */,
+				8F4D208B2E0132B4004A12CA /* Support Files */,
+				8FB58B862E29ED5C002B307D /* Past Updates */,
+			);
+			name = "LyricRise";
+			packageProductDependencies = (
+				8F6BD2942A8A61C9008BBF88 /* AmplitudeSwift */,
+				8FFA9F332AA1B3CB00BAEC5C /* SDWebImageSwiftUI */,
+				8F28FDC12AA25D2700439D8D /* Sparkle */,
+				8F89E1102C90DA4900F511EB /* LaunchAtLogin */,
+				8FA4E9772CE73DB900CEEF35 /* ColorKit */,
+				8F832CAC2D6BEC52008C1C2B /* FontPicker */,
+				8FFED07A2D8A26E700EA1510 /* SwiftOTP */,
+				8F8196862D93CCDC00F03741 /* StringMetric */,
+				8F1979942DA72D49008C113D /* IPADic */,
+				8F1979962DA72D49008C113D /* Mecab-Swift */,
+				8F37323C2E6EC9C90075CDA7 /* OpenCC */,
+				8F1198712E72B9840011A962 /* KeyboardShortcuts */,
+				8F2922BF2E94DE0700B286FC /* MediaRemoteAdapter */,
+				8F0E98942EE24713008A50A4 /* MenuBarExtraAccess */,
+				8F9B71A12F55F19400214019 /* ObservableUserDefault */,
+			);
+			productName = LyricRise;
+			productReference = 8FC8E9452A704EEB00F69915 /* LyricRise.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FC8E93D2A704EEB00F69915 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					8FC8E9442A704EEB00F69915 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 8FC8E9402A704EEB00F69915 /* Build configuration list for PBXProject "LyricRise" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = 8FC8E93C2A704EEB00F69915;
+			packageReferences = (
+				8F6BD2932A8A61C8008BBF88 /* XCRemoteSwiftPackageReference "Amplitude-Swift" */,
+				8FFA9F322AA1B3CB00BAEC5C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				8F28FDC02AA25D2700439D8D /* XCRemoteSwiftPackageReference "Sparkle" */,
+				8F89E10F2C90DA4900F511EB /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
+				8FA4E9762CE73DB900CEEF35 /* XCRemoteSwiftPackageReference "ColorKit-macOS" */,
+				8F832CAB2D6BEC52008C1C2B /* XCRemoteSwiftPackageReference "FontPicker" */,
+				8FFED0792D8A26E700EA1510 /* XCRemoteSwiftPackageReference "SwiftOTP" */,
+				8F8196852D93CCDC00F03741 /* XCRemoteSwiftPackageReference "StringMetric" */,
+				8F1979932DA72D49008C113D /* XCRemoteSwiftPackageReference "Mecab-Swift" */,
+				8F37323B2E6EC9C90075CDA7 /* XCRemoteSwiftPackageReference "SwiftyOpenCC" */,
+				8F1198702E72B9840011A962 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+				8F2922BE2E94DE0700B286FC /* XCRemoteSwiftPackageReference "mediaremote-adapter" */,
+				8F0E98932EE24713008A50A4 /* XCRemoteSwiftPackageReference "MenuBarExtraAccess" */,
+				8F9B71A02F55F19400214019 /* XCRemoteSwiftPackageReference "ObservableUserDefault" */,
+			);
+			productRefGroup = 8FC8E9462A704EEB00F69915 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FC8E9442A704EEB00F69915 /* LyricRise */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FC8E9432A704EEB00F69915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA436AE2BC49D480072016C /* newPermissionMac.gif in Resources */,
+				8FFA9F382AA1B63500BAEC5C /* crossfade.gif in Resources */,
+				8FCFD1C32AE35DEA00B22023 /* spotifylogin.gif in Resources */,
+				8F0D66DC2E99CC5D00976881 /* Localizable.xcstrings in Resources */,
+				A1A111111111111111111112 /* InfoPlist.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FC8E9412A704EEB00F69915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6BD2972A8A6278008BBF88 /* amplitudeKey.swift in Sources */,
+				8F4F49522A7EC32D00097888 /* (null) in Sources */,
+				8F28BFD42D578456002E2CE6 /* KaraokeSettings.swift in Sources */,
+				8FEF70F72D8B5CE40069AC01 /* Update22Window.swift in Sources */,
+				8F6BD2992A8A6B7D008BBF88 /* ViewModel.swift in Sources */,
+				8FC8E9492A704EEB00F69915 /* LyricRise.swift in Sources */,
+				8F1198742E72B9C60011A962 /* GlobalKeyboardShortcutsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8FC8E9522A704EED00F69915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FC8E9532A704EED00F69915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		8FC8E9552A704EED00F69915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "LyricRise/Support Files/LyricRise.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3.3;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LyricRise/Support Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = LyricRise;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "I need to access Spotify / Apple Music to play the lyrics properly.";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "This permission is required to interact with your Apple Music library.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 3.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.navel7.LyricRise;
+				PRODUCT_NAME = LyricRise;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8FC8E9562A704EED00F69915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "LyricRise/Support Files/LyricRise.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3.3;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LyricRise/Support Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = LyricRise;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "I need to access Spotify / Apple Music to play the lyrics properly.";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "This permission is required to interact with your Apple Music library.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 3.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.navel7.LyricRise;
+				PRODUCT_NAME = LyricRise;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FC8E9402A704EEB00F69915 /* Build configuration list for PBXProject "LyricRise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FC8E9522A704EED00F69915 /* Debug */,
+				8FC8E9532A704EED00F69915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FC8E9542A704EED00F69915 /* Build configuration list for PBXNativeTarget "LyricRise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FC8E9552A704EED00F69915 /* Debug */,
+				8FC8E9562A704EED00F69915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F0E98932EE24713008A50A4 /* XCRemoteSwiftPackageReference "MenuBarExtraAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orchetect/MenuBarExtraAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.2;
+			};
+		};
+		8F1198702E72B9840011A962 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+		8F1979932DA72D49008C113D /* XCRemoteSwiftPackageReference "Mecab-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shinjukunian/Mecab-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.0;
+			};
+		};
+		8F28FDC02AA25D2700439D8D /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.2;
+			};
+		};
+		8F2922BE2E94DE0700B286FC /* XCRemoteSwiftPackageReference "mediaremote-adapter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ejbills/mediaremote-adapter";
+			requirement = {
+				kind = revision;
+				revision = 5b6afde3f501a3da567e23bf7f23d562938a1809;
+			};
+		};
+		8F37323B2E6EC9C90075CDA7 /* XCRemoteSwiftPackageReference "SwiftyOpenCC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ddddxxx/SwiftyOpenCC";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		8F6BD2932A8A61C8008BBF88 /* XCRemoteSwiftPackageReference "Amplitude-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/amplitude/Amplitude-Swift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		8F8196852D93CCDC00F03741 /* XCRemoteSwiftPackageReference "StringMetric" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/autozimu/StringMetric.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.2;
+			};
+		};
+		8F832CAB2D6BEC52008C1C2B /* XCRemoteSwiftPackageReference "FontPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tyagishi/FontPicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		8F89E10F2C90DA4900F511EB /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		8F9B71A02F55F19400214019 /* XCRemoteSwiftPackageReference "ObservableUserDefault" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/davidsteppenbeck/ObservableUserDefault.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.1;
+			};
+		};
+		8FA4E9762CE73DB900CEEF35 /* XCRemoteSwiftPackageReference "ColorKit-macOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aviwad/ColorKit-macOS";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		8FFA9F322AA1B3CB00BAEC5C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		8FFED0792D8A26E700EA1510 /* XCRemoteSwiftPackageReference "SwiftOTP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lachlanbell/SwiftOTP";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F0E98942EE24713008A50A4 /* MenuBarExtraAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F0E98932EE24713008A50A4 /* XCRemoteSwiftPackageReference "MenuBarExtraAccess" */;
+			productName = MenuBarExtraAccess;
+		};
+		8F1198712E72B9840011A962 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F1198702E72B9840011A962 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+		8F1979942DA72D49008C113D /* IPADic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F1979932DA72D49008C113D /* XCRemoteSwiftPackageReference "Mecab-Swift" */;
+			productName = IPADic;
+		};
+		8F1979962DA72D49008C113D /* Mecab-Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F1979932DA72D49008C113D /* XCRemoteSwiftPackageReference "Mecab-Swift" */;
+			productName = "Mecab-Swift";
+		};
+		8F28FDC12AA25D2700439D8D /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F28FDC02AA25D2700439D8D /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+		8F2922BF2E94DE0700B286FC /* MediaRemoteAdapter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F2922BE2E94DE0700B286FC /* XCRemoteSwiftPackageReference "mediaremote-adapter" */;
+			productName = MediaRemoteAdapter;
+		};
+		8F37323C2E6EC9C90075CDA7 /* OpenCC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F37323B2E6EC9C90075CDA7 /* XCRemoteSwiftPackageReference "SwiftyOpenCC" */;
+			productName = OpenCC;
+		};
+		8F6BD2942A8A61C9008BBF88 /* AmplitudeSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F6BD2932A8A61C8008BBF88 /* XCRemoteSwiftPackageReference "Amplitude-Swift" */;
+			productName = AmplitudeSwift;
+		};
+		8F8196862D93CCDC00F03741 /* StringMetric */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F8196852D93CCDC00F03741 /* XCRemoteSwiftPackageReference "StringMetric" */;
+			productName = StringMetric;
+		};
+		8F832CAC2D6BEC52008C1C2B /* FontPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F832CAB2D6BEC52008C1C2B /* XCRemoteSwiftPackageReference "FontPicker" */;
+			productName = FontPicker;
+		};
+		8F89E1102C90DA4900F511EB /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F89E10F2C90DA4900F511EB /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			productName = LaunchAtLogin;
+		};
+		8F9B71A12F55F19400214019 /* ObservableUserDefault */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F9B71A02F55F19400214019 /* XCRemoteSwiftPackageReference "ObservableUserDefault" */;
+			productName = ObservableUserDefault;
+		};
+		8FA4E9772CE73DB900CEEF35 /* ColorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FA4E9762CE73DB900CEEF35 /* XCRemoteSwiftPackageReference "ColorKit-macOS" */;
+			productName = ColorKit;
+		};
+		8FFA9F332AA1B3CB00BAEC5C /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FFA9F322AA1B3CB00BAEC5C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		8FFED07A2D8A26E700EA1510 /* SwiftOTP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FFED0792D8A26E700EA1510 /* XCRemoteSwiftPackageReference "SwiftOTP" */;
+			productName = SwiftOTP;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8FC8E93D2A704EEB00F69915 /* Project object */;
+}
