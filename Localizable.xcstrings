@@ -90,18 +90,18 @@
         }
       }
     },
-    "[LyricRise GitHub](https://github.com/navel7/LyricRise)\nVersion 3.3" : {
+    "[LyricRise GitHub](https://github.com/navel7/LyricRise)\nVersion %@" : {
       "localizations" : {
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "[LyricRise GitHub](https://github.com/navel7/LyricRise)\n版本 3.3"
+            "value" : "[LyricRise GitHub](https://github.com/navel7/LyricRise)\n版本 %@"
           }
         },
         "zh-Hant-HK" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "[LyricRise GitHub](https://github.com/navel7/LyricRise)\n版本 3.3"
+            "value" : "[LyricRise GitHub](https://github.com/navel7/LyricRise)\n版本 %@"
           }
         }
       }

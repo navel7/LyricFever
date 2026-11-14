@@ -150,7 +150,7 @@ struct MainSettingsView: View {
                 VStack {
                     Text("For support, please use [GitHub Issues](https://github.com/navel7/LyricRise/issues).")
                     Text("⚠️ Disclaimer: I do not own the rights to Spotify or the lyric content presented.\nMusixmatch and Spotify own all rights to the lyrics.\nTranslations by InTheManXG and ARui-tw")
-                    Text("[LyricRise GitHub](https://github.com/navel7/LyricRise)\nVersion 3.3")
+                    Text("[LyricRise GitHub](https://github.com/navel7/LyricRise)\nVersion \(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "unknown")")
                 }
                     .multilineTextAlignment(.center)
                     .font(.callout)
