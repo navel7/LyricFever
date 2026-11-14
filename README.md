@@ -1,8 +1,8 @@
-# Lyric Fever - navel7fork
+# LyricRise - navel7fork
 
 [日本語](README.ja.md)
 
-Lyric Fever is a Mac app that displays lyrics in sync with Apple Music or Spotify, bringing a karaoke-style experience to your desktop.
+LyricRise is a Mac app that displays lyrics in sync with Apple Music or Spotify, bringing a karaoke-style experience to your desktop.
 
 This is a modified version of [Lyric Fever by aviwad](https://github.com/aviwad/LyricFever) v3.3, updated for macOS Tahoe and later. It adds Liquid Glass support and adjustable lyric timing, among other changes. It is released separately from the original app and is not an official release by its author.
 
@@ -17,7 +17,7 @@ This is a modified version of [Lyric Fever by aviwad](https://github.com/aviwad/
 
 - Requires **macOS 15 or later** and **Apple Music or the Spotify desktop app**.
 - This DMG is for **Apple Silicon Macs (M1 or later) only**. It does not support Intel Macs.
-- Installing this version over the original replaces the original app. Settings and saved lyrics may be shared between them. Keep a copy of the original app if you want to switch back, and avoid running both at once.
+- LyricRise installs separately from Lyric Fever. On first launch, you can import the old app settings by selecting `com.aviwadhwa.SpotifyLyricsInMenubar.plist`. Saved lyrics are not imported.
 - This version has only been checked on macOS Golden Gate 27.2.
 
 ## First-launch warnings
@@ -29,10 +29,11 @@ When you first open it, macOS may say that the developer cannot be verified or t
 ## How to install
 
 1. Download the DMG from [the download section](https://github.com/navel7/LyricFever/releases/latest).
-2. Quit Lyric Fever if it is running.
-3. Open the DMG and drag **Lyric Fever.app** onto **Applications**. If asked to replace an existing copy, confirm that you want to replace it with this version before proceeding.
-4. If macOS blocks the app because the developer cannot be verified, open **System Settings → Privacy & Security**. Find the message about Lyric Fever, select **Open Anyway**, and follow the prompts. Only do this if you trust the source.
-5. If asked, allow Lyric Fever to control Apple Music or Spotify. This permission is needed to follow playback. You may be asked again even if you previously used the original app.
+2. Quit LyricRise if it is running.
+3. Open the DMG and drag **LyricRise.app** onto **Applications**. If asked to replace an existing copy, confirm that you want to replace it with this version before proceeding.
+4. If macOS blocks the app because the developer cannot be verified, open **System Settings → Privacy & Security**. Find the message about LyricRise, select **Open Anyway**, and follow the prompts. Only do this if you trust the source.
+5. On first launch, choose whether to import settings from Lyric Fever. The file chooser opens the old app's preferences folder; select **`com.aviwadhwa.SpotifyLyricsInMenubar.plist`**. If it is not there, start with new settings.
+6. If asked, allow LyricRise to control Apple Music or Spotify. This permission is needed to follow playback. You may be asked again because the app's identity has changed.
 
 ## How to update
 
